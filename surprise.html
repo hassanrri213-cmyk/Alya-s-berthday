@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For My Alya ❤️</title>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>For Alya ❤️</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#0a0a0a;color:#fff;font-family:'Poppins',sans-serif;overflow-x:hidden;min-height:100vh}
-.bg{position:fixed;inset:0;z-index:0;background:radial-gradient(circle at 20% 30%, #ff149344, transparent 40%), radial-gradient(circle at 80% 70%, #ffcc0033, transparent 40%), #0a0a0a}
-.hearts{position:fixed;inset:0;z-index:1;pointer-events:none}
-.heart-fall{position:absolute;animation:fall linear infinite}
-@keyframes fall{0%{transform:translateY(-10vh) rotate(0deg);opacity:1}100%{transform:translateY(110vh) rotate(720deg);opacity:0}}
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#ff0a6c,#ffcc00);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px}
+.card{background:white;border-radius:30px;max-width:400px;width:100%;padding:30px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
+h1{font-size:50px;color:#ff0a6c;margin:0;line-height:1}
+h1 span{color:#ffcc00;display:block;font-size:60px}
+.heart{font-size:50px;animation:beat 1s infinite}
+@keyframes beat{50%{transform:scale(1.2)}}
+.letter{background:#fff8f0;border-radius:20px;padding:20px;margin:20px 0;text-align:left;color:#333;line-height:1.8;font-size:14px;border:2px dashed #ff0a6c44}
+.sign{text-align:right;font-weight:bold;color:#ff0a6c;font-size:18px;margin-top:15px}
+.btn{background:linear-gradient(90deg,#ff0a6c,#ffcc00);color:white;padding:14px 25px;border-radius:99px;text-decoration:none;display:inline-block;margin-top:15px;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="heart">💖👑💖</div>
+<h1>Happy Birthday<span>ALYA</span></h1>
+<p style="color:#ff0a6c;font-weight:bold;letter-spacing:2px">ALYA ❤️ HASSAN</p>
 
-.container{position:relative;z-index:2;max-width:500px;margin:0 auto;padding:20px;text-align:center}
+<div class="letter">
+🌹 My Dearest Alya,<br><br>
+Happy Birthday to my Queen! 🎂✨<br><br>
+You are the most beautiful soul I ever met. Your smile is my sunshine, your love is my everything. 🥰<br><br>
+Today I wish you happiness, roses, and all the love in the world. 💐<br><br>
+I promise to love you more every day, and to celebrate every birthday with you.<br><br>
+🎉🎈🌹💝🌸🎁💐<br>
+<div class="sign">Forever Yours,<br>HASSAN ❤️🌹</div>
+</div>
 
-.header{padding:40px 0 20px}
-.header h1{font-family:'Great Vibes',cursive;font-size:70px;color:#ff7eb3;line-height:0.9}
-.header h1 span{color:#ffcc00;display:block;font-size:80px;margin-top:5px;text-shadow:0 0 30px #ffcc00aa}
-.names{margin:20px 0;font-size:18px;letter-spacing:4px;color:#ffcc00;font-weight:600}
-.names b{color:#ff2d78}
-
-.envelope-wrap{margin:30px auto;perspective:1000px;cursor:pointer}
-.envelope{width:320px;height:200px;margin:0 auto;background:#1a1a1a;border:1px solid #ffffff22;border-radius:0 0 20px 20px;position:relative;transition:0.8s}
-.envelope:before{content:"";position:absolute;top:-100px;left:0;width:0;height:0;border-left:160px solid transparent;border-right:160px solid transparent;border-bottom:100px solid #ff2d78;transform-origin:bottom;transition:0.8s;z-index:3}
-.envelope.open:before{transform:rotateX(180deg);z-index:0}
-.envelope:after{content:"💌 Tap to open my heart";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font
+<p style="font-size:30px">🌹💖🌸💐🎂🎉✨💝</p>
+<p style="font-size:12px;color:#888">Made with endless love by HASSAN for his ALYA</p>
+<a href="index.html" class="btn">Back ↩️</a>
+</div>
+</body>
+</html>
