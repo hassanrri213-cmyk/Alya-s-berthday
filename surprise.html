@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Alya - My Queen</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif; background:#0f0a14; color:white; overflow-x:hidden}
+canvas{position:fixed; inset:0; pointer-events:none; z-index:10}
+.hero{min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; background: radial-gradient(circle at 20% 30%, #ff0a54 0%, transparent 40%), radial-gradient(circle at 80% 70%, #ffbe0b 0%, transparent 40%), #140a1e; padding:30px}
+.card{background:rgba(255,255,255,0.08); backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.15); border-radius:35px; padding:40px 30px; max-width:420px; width:100%; box-shadow:0 30px 80px rgba(0,0,0,0.5)}
+h1{font-family:'Great Vibes',cursive; font-size:58px; color:#ff8fab; line-height:1}
+h1 span{color:#ffbe0b}
+.subtitle{margin-top:10px; opacity:0.8; letter-spacing:2px; font-size:12px; text-transform:uppercase}
+.cake{font-size:70px; margin:15px 0; animation:float 3s infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.btn{margin-top:22px; background:linear-gradient(90deg,#ff0a54,#ffbe0b); border:none; padding:14px 32px; border-radius:50px; color:white; font-weight:600; font-size:16px; cursor:pointer; box-shadow:0 10px 30px rgba(255,10,84,0.4)}
+.gifts{display:grid; grid-template-columns:1fr 1fr 1fr; gap:15px; margin-top:35px}
+.gift{background:rgba(255,255,255,0.07); border-radius:20px; padding:18px 10px; cursor:pointer; transition:0.4s; border:1px solid rgba(255,255,255,0.1)}
+.gift:hover{transform:translateY(-8px) scale(1.05); background:rgba(255,255,255,0.12)}
+.gift .icon{font-size:34px}
+.gift p{font-size:11px; margin-top:6px; opacity:0.9}
+.message-box{display:none; margin-top:25px; background:white; color:#1a1a1a; border-radius:20px; padding:20px; animation:pop 0.6s}
+.message-box.show{display:block}
+@keyframes pop{from{transform:scale(0.8); opacity:0} to{transform:scale(1); opacity:1}}
+.message-box h3{color:#ff0a54}
+.big-link{display:inline-block; margin-top:25px; text-decoration:none; color:white; border:1px solid rgba(255,255,255,0.3); padding:12px 28px; border-radius:50px}
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+<div class="hero">
+<div class="card">
+<div class="cake">🎂</div>
+<h1>Happy Birthday <span>Alya</span></h1>
+<div class="subtitle">To the most beautiful soul I know</div>
+<p style="margin-top:18px; line-height:1.6; opacity:0.85">Today the world became more beautiful because you were born. You are not just a year older, you are more amazing than ever.</p>
+
+<button class="btn" onclick="startParty()">Open Your Surprises 🎉</button>
+
+<div class="gifts" id="gifts" style="display:none">
+<div class="gift" onclick="openGift(1)"><div class="icon">💌</div><p>LOVE LETTER</p></div>
+<div class="gift" onclick="openGift(2)"><div class="icon">🌹</div><p>FOR YOU</p></div>
+<div class="gift" onclick="openGift(3)"><div class="icon">💎</div><p>WISH</p></div>
+</div>
+
+<div id="msg1" class="message-box"><h3>💌 My Dearest Alya</h3><p style="margin-top:10px">I don't know how to say it perfectly, but you make my days brighter. Your smile is my favorite thing in the world. I hope this year brings you all the love you give to others. You deserve the universe.</p></div>
+<div id="msg2" class="message-box"><h3>🌹 You Are Special</h3><p style="margin-top:10px">Like a rare rose, you are unique, elegant and unforgettable. Never change who you are. The world needs more people like you.</p></div>
+<div id="msg3" class="message-box"><h3>💎 My Wish For You</h3><p style="margin-top:10px">
